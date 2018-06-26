@@ -1,0 +1,52 @@
+GO
+/****** Object:  Table [dbo].[Cobro]    Script Date: 26/6/2018 16:19:22 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Cobro](
+	[Id_Cobro] [int] NOT NULL,
+	[Id_Cliente] [int] NOT NULL,
+	[Id_Factura] [int] NOT NULL,
+	[Id_Producto] [int] NOT NULL,
+	[Cantidad] [int] NOT NULL,
+	[Precio] [int] NOT NULL,
+ CONSTRAINT [PK_Cobro] PRIMARY KEY CLUSTERED 
+(
+	[Id_Cobro] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Detalle_Cobro]    Script Date: 26/6/2018 16:22:40 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Detalle_Cobro](
+	[Id_DetCobro] [int] NOT NULL,
+        [Id_Cobro] [int] NOT NULL,
+	[Id_Factura] [int] NOT NULL,
+	[Id_Producto] [int] NOT NULL,
+	[Cantidad] [float] NULL,
+	[Precio] [float] NULL,
+ CONSTRAINT [PK_Detalle_Cobro] PRIMARY KEY CLUSTERED 
+(
+	[Id_DetCobro] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Pendiente]    Script Date: 26/6/2018 16:30:55 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Pendiente](
+	[Id_Pendiente] [int] NOT NULL,
+	[Id_Cliente] [int] NOT NULL,
+	[Id_Factura] [int] NOT NULL,
+        [Descripcion] [varchar] (50) NOT NULL,
+ CONSTRAINT [PK_Pendiente] PRIMARY KEY CLUSTERED 
+(
+	[Id_Pendiente] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
