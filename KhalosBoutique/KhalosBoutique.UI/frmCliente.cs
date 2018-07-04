@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace KhalosBoutique.UI
 {
-    public partial class frmInicio : Form
+    public partial class frmCliente : Form
     {
-        public frmInicio()
+        public frmCliente()
         {
             InitializeComponent();
         }
