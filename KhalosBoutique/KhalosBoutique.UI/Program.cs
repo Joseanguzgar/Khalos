@@ -16,7 +16,7 @@ namespace KhalosBoutique.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmUsuario()); 
+            Application.Run(new frmLogin()); 
         }
     }
 }

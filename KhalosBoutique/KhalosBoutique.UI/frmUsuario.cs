@@ -177,5 +177,12 @@ namespace KhalosBoutique.UI
             btnEliminar.Enabled = false;
             btnModificar.Enabled = false;
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            frmMenuAdmin nav = new frmMenuAdmin();
+            nav.Show();
+            Hide();
+        }
     }
 }

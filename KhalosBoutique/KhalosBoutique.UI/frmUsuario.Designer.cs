@@ -272,6 +272,7 @@
             this.btnVolver.Size = new System.Drawing.Size(39, 39);
             this.btnVolver.TabIndex = 40;
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // txtContraseña
             // 
