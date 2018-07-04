@@ -62,6 +62,7 @@ namespace KhalosBoutique.UI
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+
             usuario = txtUser.Text;
             contrasena = txtContra.Text;
         }
