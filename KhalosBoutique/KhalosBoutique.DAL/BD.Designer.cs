@@ -26,8 +26,8 @@ namespace KhalosBoutique.DAL {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-28LLGU0\\SQLEXPRESS;Initial Catalog=KhalosBD;Integrated Securi" +
-            "ty=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-NPNFVF1E\\SQLEXPRESS01;Initial Catalog=KhalosBD;Integrated Secu" +
+            "rity=True")]
         public string conexion {
             get {
                 return ((string)(this["conexion"]));
