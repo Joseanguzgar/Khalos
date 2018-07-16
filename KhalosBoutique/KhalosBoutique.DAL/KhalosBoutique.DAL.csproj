@@ -60,9 +60,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>BD.settings</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\ICliente.cs" />
     <Compile Include="Interfaces\IRol.cs" />
     <Compile Include="Interfaces\IUsuario.cs" />
     <Compile Include="Metodos\MBase.cs" />
+    <Compile Include="Metodos\MCliente.cs" />
     <Compile Include="Metodos\MRol.cs" />
     <Compile Include="Metodos\MUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
