@@ -50,9 +50,9 @@ namespace KhalosBoutique.UI
 
         private void btnInventario_Click(object sender, EventArgs e)
         {
-            /*frmInventario nav = new frmInventario();
+            frmInventario nav = new frmInventario();
             nav.Show();
-            Hide();*/
+            Hide();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
