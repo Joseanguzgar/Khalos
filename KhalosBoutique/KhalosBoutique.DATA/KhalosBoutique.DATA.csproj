@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ServiceStack.Interfaces">
-      <HintPath>..\..\..\Referencias\ServiceStack.Interfaces.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Referencias\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,10 +45,13 @@
   <ItemGroup>
     <Compile Include="Categoria.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="Detalle_Factura.cs" />
+    <Compile Include="Factura.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rol.cs" />
     <Compile Include="Usuario.cs" />
+    <Compile Include="ViewCompras.cs" />
     <Compile Include="ViewProductos.cs" />
     <Compile Include="ViewProductosStock.cs" />
   </ItemGroup>

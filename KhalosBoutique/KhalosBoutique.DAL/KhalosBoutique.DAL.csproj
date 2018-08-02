@@ -31,19 +31,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ServiceStack.Common">
-      <HintPath>..\..\..\Referencias\ServiceStack.Common.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Referencias\ServiceStack.Common.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Interfaces">
-      <HintPath>..\..\..\Referencias\ServiceStack.Interfaces.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Referencias\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.OrmLite">
-      <HintPath>..\..\..\Referencias\ServiceStack.OrmLite.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Referencias\ServiceStack.OrmLite.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.OrmLite.SqlServer">
-      <HintPath>..\..\..\Referencias\ServiceStack.OrmLite.SqlServer.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Referencias\ServiceStack.OrmLite.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Text">
-      <HintPath>..\..\..\Referencias\ServiceStack.Text.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Referencias\ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -62,12 +62,18 @@
     </Compile>
     <Compile Include="Interfaces\ICategoria.cs" />
     <Compile Include="Interfaces\ICliente.cs" />
+    <Compile Include="Interfaces\ICompra.cs" />
+    <Compile Include="Interfaces\IDetalle_Factura.cs" />
+    <Compile Include="Interfaces\IFactura.cs" />
     <Compile Include="Interfaces\IProducto.cs" />
     <Compile Include="Interfaces\IRol.cs" />
     <Compile Include="Interfaces\IUsuario.cs" />
     <Compile Include="Metodos\MBase.cs" />
     <Compile Include="Metodos\MCategoria.cs" />
     <Compile Include="Metodos\MCliente.cs" />
+    <Compile Include="Metodos\MCompra.cs" />
+    <Compile Include="Metodos\MDetalle_Factura.cs" />
+    <Compile Include="Metodos\MFactura.cs" />
     <Compile Include="Metodos\MProducto.cs" />
     <Compile Include="Metodos\MRol.cs" />
     <Compile Include="Metodos\MUsuario.cs" />
