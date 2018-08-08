@@ -11,32 +11,31 @@ namespace KhalosBoutique.DAL.Metodos
 {
    public class MDetalle_Factura
     {
-        public class MFactura : MBase, IFactura
+        public class MFactura : MBase, IDetalle_Factura
         {
-            public void ActualizarFactura(Factura factura)
+            public Detalle_Factura BuscarDetalle(int idDetalle)
             {
-                db.Update(factura);
+                return db.Select<Detalle_Factura>(x => x.Id_Detalle == idDetalle).FirstOrDefault();
             }
 
-            public Factura BuscarFactura(int idFactura)
+            public void EliminarDetalle(int idDetalle)
             {
-                return db.Select<Factura>(x => x.Id_Factura == idFactura).FirstOrDefault();
+                db.Delete<Detalle_Factura>(x => x.Id_Detalle == idDetalle);
             }
 
-            public void EliminarFactura(int idFactura)
+            public void FacturarConjunto(Detalle_Factura factura)
             {
-                db.Delete<Factura>(x => x.Id_Factura == idFactura);
-            }
-
-            public void Facturar(Factura factura)
-            {
-
                 db.Insert(factura);
             }
 
-            public List<Factura> ListarFacturas()
+            public List<Detalle_Factura> ListaDetalles()
             {
-                return db.Select<Factura>();
+                return db.Select<Detalle_Factura>();
+            }
+
+            public List<Detalle_Factura> ListarCompra(int idFactura)
+            {
+                return db.Select<Detalle_Factura>(X => X.Id_Factura == idFactura);
             }
         }
     }

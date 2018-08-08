@@ -43,9 +43,9 @@ namespace KhalosBoutique.UI
 
         private void btnFacturacion_Click(object sender, EventArgs e)
         {
-            /*frmFacturar nav = new frmFacturar();
+            frmFactura nav = new frmFactura();
             nav.Show();
-            Hide();*/
+            Hide();
         }
 
         private void btnInventario_Click(object sender, EventArgs e)

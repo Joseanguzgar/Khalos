@@ -11,6 +11,7 @@ namespace KhalosBoutique.DAL.Metodos
 {
     public class MUsuario : MBase, IUsuario
     {
+        //LAPTOP-NPNFVF1E\SQLEXPRESS01
         public void ActualizarUsuario(Usuario usuario)
         {
             db.Update(usuario);
