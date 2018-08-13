@@ -2,6 +2,12 @@
 Proyecto de Diseño y Desarrollo de Sistemas. Punto de venta para una boutique
 
 # Autores
-Maria Esther Marin Chacon
-Jose Andres Guzman Garcia
+María Esther Marín Chacón
+José Andrés Guzmán García
 Shafiq Mora Campos
+
+# Prerequisitos de instalación 
+
+# Instalación
+
+# Despliegue 
