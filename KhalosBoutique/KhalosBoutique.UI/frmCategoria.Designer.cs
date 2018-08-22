@@ -57,7 +57,7 @@
             this.groupBox2.Controls.Add(this.txtIdCategoriaAdmi);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.ForeColor = System.Drawing.Color.HotPink;
+            this.groupBox2.ForeColor = System.Drawing.Color.LightPink;
             this.groupBox2.Location = new System.Drawing.Point(12, 151);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(412, 195);
@@ -168,7 +168,7 @@
             this.groupBox1.Controls.Add(this.btnInsertar);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.ForeColor = System.Drawing.Color.HotPink;
+            this.groupBox1.ForeColor = System.Drawing.Color.LightPink;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(412, 133);
@@ -180,7 +180,8 @@
             // 
             this.btnVolver.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolver.Image = ((System.Drawing.Image)(resources.GetObject("btnVolver.Image")));
+            this.btnVolver.ForeColor = System.Drawing.Color.LightPink;
+            this.btnVolver.Image = global::KhalosBoutique.UI.Properties.Resources.icons8_izquierda_en_círculo_2_40;
             this.btnVolver.Location = new System.Drawing.Point(358, 26);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(39, 39);

@@ -53,38 +53,57 @@ namespace KhalosBoutique.UI
                 var contraseña = txtContraseña.Text;
                 if (!String.IsNullOrEmpty(nombre) && !String.IsNullOrEmpty(cuenta) && !String.IsNullOrEmpty(contraseña))
                 {
-                    var confirmar = MessageBox.Show("¿Seguro que desea insertar este usuario?", "Confirmar", MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Warning);
-                    if (confirmar == DialogResult.Yes)
+                    if (cbxRol.SelectedIndex + 1 == 2)
                     {
-                        var usuario = new Usuario
+                        var confirmar = MessageBox.Show("¿Seguro que desea insertar este usuario?", "Confirmar", MessageBoxButtons.YesNo,
+                   MessageBoxIcon.Warning);
+                        if (confirmar == DialogResult.Yes)
                         {
-                            Nombre = txtNombre.Text,
-                            Cuenta = txtCuenta.Text,
-                            Contraseña = txtContraseña.Text,
-                            IdRol = cbxRol.SelectedIndex + 1,
-                        };
-                        usua.InsertarUsuario(usuario);
-                        ActualizarGridView();
-                        MessageBox.Show("Usuario insertado exitosamente", "Información",
-                          MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            var usuario = new Usuario
+                            {
+                                Nombre = txtNombre.Text,
+                                Cuenta = txtCuenta.Text,
+                                Contraseña = txtContraseña.Text,
+                                IdRol = cbxRol.SelectedIndex + 1,
+                            };
+                            usua.InsertarUsuario(usuario);
+                            ActualizarGridView();
+                            MessageBox.Show("Usuario insertado exitosamente", "Información",
+                              MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            txtNombre.Clear();
+                            txtCuenta.Clear();
+                            txtContraseña.Clear();
+                            cbxRolAdmi.SelectedIndex = 0;
+                        }
+                        else
+                        {
+                            txtNombre.Clear();
+                            txtCuenta.Clear();
+                            txtContraseña.Clear();
+                        }
+                        
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pueden insertar usuarios con el rol administrador", "Información",
+                          MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         txtNombre.Clear();
                         txtCuenta.Clear();
                         txtContraseña.Clear();
                         cbxRolAdmi.SelectedIndex = 0;
                     }
-                    else
-                    {
-                        txtNombre.Clear();
-                        txtCuenta.Clear();
-                        txtContraseña.Clear();
-                    }
+                    
                 }
                 else
                 {
                     MessageBox.Show("Faltan datos", "Información",
                          MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtNombre.Clear();
+                    txtCuenta.Clear();
+                    txtContraseña.Clear();
+                    cbxRolAdmi.SelectedIndex = 0;
                 }
+
             }
             catch (Exception ex)
             {
@@ -109,6 +128,12 @@ namespace KhalosBoutique.UI
                     btnEliminar.Enabled = true;
                     btnEliminar.Enabled = true;
                     btnModificar.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("No existe el usuario", "Información",
+                  MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LimpiarAdmi();
                 }
 
             }
@@ -135,7 +160,7 @@ namespace KhalosBoutique.UI
                 ActualizarGridView();
                 MessageBox.Show("Usuario modificado exitosamente", "Información",
                   MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                LimpiarAdmi();
             }
             catch (Exception ex)
             {
@@ -157,6 +182,12 @@ namespace KhalosBoutique.UI
                     ActualizarGridView();
                     MessageBox.Show("Usuario eliminado exitosamente", "Información",
                          MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LimpiarAdmi();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario no eliminado", "Información",
+                  MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
@@ -166,7 +197,7 @@ namespace KhalosBoutique.UI
             }
         }
 
-        private void btnLimpiar_Click(object sender, EventArgs e)
+        void LimpiarAdmi()
         {
             txtIdUsuarioAdmi.Clear();
             txtNombreAdmi.Clear();
@@ -176,6 +207,11 @@ namespace KhalosBoutique.UI
             txtIdUsuarioAdmi.Enabled = true;
             btnEliminar.Enabled = false;
             btnModificar.Enabled = false;
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            LimpiarAdmi();
         }
 
         private void btnVolver_Click(object sender, EventArgs e)

@@ -11,10 +11,10 @@ namespace KhalosBoutique.DATA
         public int Codigo { get; set; }
         public string Categoria { get; set; }
         public string Nombre { get; set; }
-        public double PrecioMayor { get; set; }
         public double PrecioDetalle { get; set; }
         public double PrecioCosto { get; set; }
-        public int Cantidad_en_Stock { get; set; }
+        public double PrecioMayor { get; set; }
+        public int Cantidad_Stock { get; set; }
         public string Descripcion { get; set; }
         public string Color { get; set; }
     }

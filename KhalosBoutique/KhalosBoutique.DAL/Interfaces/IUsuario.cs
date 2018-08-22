@@ -11,7 +11,7 @@ namespace KhalosBoutique.DAL.Interfaces
     {
         List<Usuario> ListarUsuarios();
 
-        Usuario BuscarUsuario(String usuario);
+        Usuario BuscarUsuario(string usuario);
 
         Usuario BuscarUsuarioId(int usuario);
 

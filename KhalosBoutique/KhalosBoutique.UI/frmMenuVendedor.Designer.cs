@@ -39,6 +39,9 @@
             this.btnInventario = new System.Windows.Forms.Button();
             this.btnFacturacion = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,9 +53,9 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.txtNombreUsuario);
             this.panel1.Controls.Add(this.btnCerrarSesion);
-            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Location = new System.Drawing.Point(0, -4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(206, 409);
+            this.panel1.Size = new System.Drawing.Size(206, 414);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -72,7 +75,7 @@
             this.txtRolUsuario.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.txtRolUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRolUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtRolUsuario.Location = new System.Drawing.Point(41, 253);
+            this.txtRolUsuario.Location = new System.Drawing.Point(41, 271);
             this.txtRolUsuario.Name = "txtRolUsuario";
             this.txtRolUsuario.Size = new System.Drawing.Size(121, 19);
             this.txtRolUsuario.TabIndex = 21;
@@ -80,7 +83,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImage = global::KhalosBoutique.UI.Properties.Resources.icons8_usuario_de_género_neutro_96__4_;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(41, 71);
             this.panel2.Name = "panel2";
@@ -92,7 +95,7 @@
             this.txtNombreUsuario.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.txtNombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombreUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtNombreUsuario.Location = new System.Drawing.Point(15, 209);
+            this.txtNombreUsuario.Location = new System.Drawing.Point(15, 215);
             this.txtNombreUsuario.Name = "txtNombreUsuario";
             this.txtNombreUsuario.Size = new System.Drawing.Size(172, 26);
             this.txtNombreUsuario.TabIndex = 20;
@@ -105,6 +108,7 @@
             this.btnCerrarSesion.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrarSesion.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnCerrarSesion.Image = global::KhalosBoutique.UI.Properties.Resources.icons8_salida_40;
             this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCerrarSesion.Location = new System.Drawing.Point(15, 305);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
@@ -187,12 +191,43 @@
             this.btnClientes.UseVisualStyleBackColor = false;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::KhalosBoutique.UI.Properties.Resources.frida;
+            this.panel3.Location = new System.Drawing.Point(225, 54);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(51, 65);
+            this.panel3.TabIndex = 24;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(282, 98);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(223, 21);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Para la mujer de hoy";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mistral", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(285, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(220, 44);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Khalo\'s Boutique";
+            // 
             // frmMenuVendedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.HotPink;
+            this.BackColor = System.Drawing.Color.LightPink;
             this.ClientSize = new System.Drawing.Size(526, 409);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnInventario);
             this.Controls.Add(this.btnFacturacion);
@@ -207,6 +242,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -222,5 +258,8 @@
         private System.Windows.Forms.Button btnInventario;
         private System.Windows.Forms.Button btnFacturacion;
         private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

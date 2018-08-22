@@ -95,5 +95,10 @@ namespace KhalosBoutique.UI
             nav.Show();
             Hide();*/
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

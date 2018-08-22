@@ -46,18 +46,18 @@ namespace KhalosBoutique.UI
                 var precioMayor = txtPrecioMayor.Text;
                 var precioDetalle = txtPrecioDetalle.Text;
                 var color = txtColor.Text;
-                if (!String.IsNullOrEmpty(nombre) && !String.IsNullOrEmpty(descripcion) && !String.IsNullOrEmpty(precioCosto) && !String.IsNullOrEmpty(marca) && !String.IsNullOrEmpty(precioDetalle) && !String.IsNullOrEmpty(precioMayor) && !String.IsNullOrEmpty(color))
+                if (!String.IsNullOrEmpty(nombre) && !String.IsNullOrEmpty(descripcion) && !String.IsNullOrEmpty(marca) && !String.IsNullOrEmpty(color))
                 {
                     var producto = new Producto
                     {
                     
                         Nombre = txtNombre.Text,
                         Descripcion = txtDescripcion.Text,
-                        PrecioCosto = Convert.ToInt32(txtPrecioCosto.Text),
+                        PrecioCosto = Convert.ToDouble(txtPrecioCosto.Text),
                         Cantidad_Stock = Convert.ToInt32(nupStock.Value),
                         IdCategoria = cbCategorias.SelectedIndex + 1,
-                        PrecioDetalle = Convert.ToInt32(txtPrecioDetalle.Text),
-                        PrecioMayor = Convert.ToInt32(txtPrecioMayor.Text),
+                        PrecioDetalle = Convert.ToDouble(txtPrecioDetalle.Text),
+                        PrecioMayor = Convert.ToDouble(txtPrecioMayor.Text),
                         Color = txtColor.Text,
                         Talla = txtTalla.Text,
                     };
@@ -122,6 +122,11 @@ namespace KhalosBoutique.UI
             frmInventarioAdministrar nav = new frmInventarioAdministrar();
             nav.Show();
             Hide();
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

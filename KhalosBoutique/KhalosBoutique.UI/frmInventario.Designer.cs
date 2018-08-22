@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInventario));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnAdministrar = new System.Windows.Forms.Button();
             this.txtColor = new System.Windows.Forms.TextBox();
             this.txtPrecioMayor = new System.Windows.Forms.TextBox();
             this.txtPrecioDetalle = new System.Windows.Forms.TextBox();
@@ -51,7 +52,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.dgvInventario = new System.Windows.Forms.DataGridView();
-            this.btnAdministrar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupStock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).BeginInit();
@@ -81,13 +81,32 @@
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.HotPink;
+            this.groupBox2.ForeColor = System.Drawing.Color.LightPink;
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(501, 315);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Insertar productos";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // btnAdministrar
+            // 
+            this.btnAdministrar.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnAdministrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAdministrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdministrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministrar.ForeColor = System.Drawing.Color.White;
+            this.btnAdministrar.Image = ((System.Drawing.Image)(resources.GetObject("btnAdministrar.Image")));
+            this.btnAdministrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdministrar.Location = new System.Drawing.Point(291, 265);
+            this.btnAdministrar.Name = "btnAdministrar";
+            this.btnAdministrar.Size = new System.Drawing.Size(153, 44);
+            this.btnAdministrar.TabIndex = 52;
+            this.btnAdministrar.Text = "Administrar";
+            this.btnAdministrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdministrar.UseVisualStyleBackColor = false;
+            this.btnAdministrar.Click += new System.EventHandler(this.btnAdministrar_Click_1);
             // 
             // txtColor
             // 
@@ -183,7 +202,7 @@
             // 
             this.btnVolver.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolver.Image = ((System.Drawing.Image)(resources.GetObject("btnVolver.Image")));
+            this.btnVolver.Image = global::KhalosBoutique.UI.Properties.Resources.icons8_izquierda_en_círculo_2_40;
             this.btnVolver.Location = new System.Drawing.Point(451, 15);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(39, 39);
@@ -289,24 +308,6 @@
             this.dgvInventario.Name = "dgvInventario";
             this.dgvInventario.Size = new System.Drawing.Size(501, 281);
             this.dgvInventario.TabIndex = 7;
-            // 
-            // btnAdministrar
-            // 
-            this.btnAdministrar.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.btnAdministrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnAdministrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdministrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdministrar.ForeColor = System.Drawing.Color.White;
-            this.btnAdministrar.Image = ((System.Drawing.Image)(resources.GetObject("btnAdministrar.Image")));
-            this.btnAdministrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdministrar.Location = new System.Drawing.Point(291, 265);
-            this.btnAdministrar.Name = "btnAdministrar";
-            this.btnAdministrar.Size = new System.Drawing.Size(153, 44);
-            this.btnAdministrar.TabIndex = 52;
-            this.btnAdministrar.Text = "Administrar";
-            this.btnAdministrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdministrar.UseVisualStyleBackColor = false;
-            this.btnAdministrar.Click += new System.EventHandler(this.btnAdministrar_Click_1);
             // 
             // frmInventario
             // 

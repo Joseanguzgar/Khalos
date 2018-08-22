@@ -20,6 +20,6 @@ namespace KhalosBoutique.DATA
 
 
         public string Contraseña { get; set; }
-        public string Rol { get; set; }
+        
     }
 }

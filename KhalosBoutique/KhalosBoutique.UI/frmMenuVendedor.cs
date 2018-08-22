@@ -24,14 +24,15 @@ namespace KhalosBoutique.UI
         public frmMenuVendedor()
         {
             InitializeComponent();
+            usu = new MUsuario();
         }
 
         private void frmMenuVendedor_Load(object sender, EventArgs e)
         {
             Fecha.Text = DateTime.Now.ToString("g");
             txtRolUsuario.Text = "Vendedor";
-           /* var usuario = usu.BuscarUsuario(frmLogin.usuario);
-            txtNombreUsuario.Text = usuario.Nombre;*/
+            var usuario = usu.BuscarUsuario(frmLogin.usuario);
+            txtNombreUsuario.Text = usuario.Nombre;
         }
 
         private void btnClientes_Click(object sender, EventArgs e)

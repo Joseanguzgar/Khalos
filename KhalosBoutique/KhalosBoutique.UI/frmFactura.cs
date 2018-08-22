@@ -22,6 +22,9 @@ namespace KhalosBoutique.UI
         public frmFactura()
         {
             InitializeComponent();
+            cli = new MCliente();
+            fac = new MFactura();
+            usu = new MUsuario();
         }
 
         private void btnFacturar_Click(object sender, EventArgs e)
@@ -59,7 +62,7 @@ namespace KhalosBoutique.UI
         private void btnVolver_Click(object sender, EventArgs e)
         {
             var usuario = usu.BuscarUsuario(frmLogin.usuario);
-            if (usuario.Rol == "Administrador")
+            if (usuario.IdRol == 1)
             {
                 frmMenuAdmin nav = new frmMenuAdmin();
                 nav.Show();

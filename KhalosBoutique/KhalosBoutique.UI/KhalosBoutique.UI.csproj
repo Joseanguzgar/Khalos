@@ -154,6 +154,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -177,6 +178,37 @@
       <Project>{08f9d87a-5f2f-487a-a1c7-3630378f797f}</Project>
       <Name>KhalosBoutique.DATA</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frida.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-accede-redondeado-derecho-10.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-carpeta-de-usuario-40.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-carrito-de-compras-40.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-categorizar-40 %281%29.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-categorizar-40 %282%29.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-categorizar-40 %283%29.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-categorizar-40 %284%29.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-categorizar-40.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-cepillo-cosmético-40.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-dólar-estadounidense-40.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-eliminar-40.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-grupos-de-usuarios-filled-40.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-gráfico-combinado-40.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-izquierda-en-círculo-2-40.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-lista-40.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-producto-40 %281%29.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-producto-40 %282%29.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-producto-40 %283%29.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-producto-40.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-salida-40.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-usuario-40 %281%29.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-usuario-40 %282%29.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-usuario-40 %283%29.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-usuario-40.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-usuario-de-género-neutro-48 %281%29.png" />
+    <Content Include="Resources\Iconos Khalos\icons8-usuario-de-género-neutro-96 %283%29.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\icons8-usuario-de-género-neutro-96 %284%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
