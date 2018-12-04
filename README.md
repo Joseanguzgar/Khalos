@@ -4,7 +4,6 @@ Proyecto de Diseño y Desarrollo de Sistemas. Punto de venta para una boutique
 # Autores
 María Esther Marín Chacón
 José Andrés Guzmán García
-Shafiq Mora Campos
 
 # Prerequisitos de instalación 
 Para poder correr este software se requiere tomar en cuneta los siguientes aspectos:
